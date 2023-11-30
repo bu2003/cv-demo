@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    height: 1000px;
+    background: #fff;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 40% 70%;
+    box-shadow: 0 34px 55px rgba( 0,0,0,0.1) ;
+
+}
+img{
+    
+    width: 250px;
+    height: 200px;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+    padding-bottom: 20px;
+    object-fit: cover;
+}
+.container .left_Side {
+    position: relative;
+    background: #003147;
+    padding:40px;
+
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+
+}
+.profileText h2 {
+    padding:10px 0;
+    
+}
+.profileText span{
+    color:#fff;
+    font-size: large;
+}
+.contact_in4 ,
+.contact_in4 ul li{
+    padding :10px;
+    
+    list-style: none;
+}
+.contact_in4 h3,
+.Education h3,
+.language h3,
+.about h3,
+.introduce h3
+{
+background-color: #27a4f2;
+line-height: 5px;
+border-radius: 15px 50px 30px 5px;;
+height: 50px;
+width: 120px;
+display:flex;
+justify-content: center;
+align-items: center;
+
+transform: translateX(-50px); 
+}
+.contact_in4 h3:hover,
+.Education h3:hover,
+.language h3:hover,
+.about h3:hover,
+.introduce h3:hover
+{ background-color:#44aee0}
+
+
+.hooby,
+.hooby1,
+.hooby2{
+  background-color: azure;  
+color: #27a4f2;
+height: 50px;
+display: flex;
+width: 100%;
+justify-content: center;
+align-items: center;
+margin: 10px 0;
+
+
+}
+.Education h3,.about h3{
+    transform: translateX(-40px);
+}
+.about h3{
+    
+margin-bottom: 20px;
+}
+.introduce h3{
+height: 50px;
+width: 270px;
+padding-left: 10px;
+padding-top: 10px;
+margin-top: 20px;
+transform: translateX(-40px);
+
+}
+.contact_in4 .text {
+    color: aliceblue;
+    padding:20px 10px;
+}
+.contact_in4 .icon {
+    font-size: 18px;
+    color: rgb(89, 149, 199);
+}
+.Education h5{
+    color:#44aee0;
+    font-weight: 500;
+
+}
+.Education ul{
+    list-style: none;
+    padding: 10px 0;
+}
+
+.Education h4{
+    color:#fff;
+    font-weight: 300;
+    padding :5px 0;
+}
+.Education h5{
+     font-size: larger;
+     padding:5px 0
+
+}
+.Education SPAN {
+    
+    line-height: 5px;
+    color:#fff
+    
+}
+.language ul{
+    list-style: none;
+    padding:10px 0;
+}
+.language h3 {
+    margin-top: 10px;
+    transform: translateX(-40px);
+}
+.language ul li{
+    padding:10px 0;
+}
+.language .percent{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background: rgb(2, 31, 39);
+    display: block;
+    margin-top:5px ;
+}
+.language .percent div {
+    position: absolute;
+    top :0;
+    left:0;
+    height:100%;
+    background:  rgb(2, 31, 39);
+
+}
+.language .percent div:hover {
+    cursor: pointer;
+    background: #44aee0;
+}
+
+
+
+
+
+
+
+
+
+
+.container .right_Side {
+    position: relative;
+    background: #fff;
+    padding:40px;
+    height: 1300px;
+}
+.introduce h4{
+    padding: 10px 0;
+}
+.introduce .ABC {
+    display: flex;
+    justify-content: space-between;
+}
+.introduce .job{
+    padding: 15px  0;
+}
+.introduce  span{
+    padding-bottom: 10px;
+    
+}
+.ABC{
+    color:#27a4f2
+}
+.job h4{
+    font-size: medium;
+}
+/* dropdown */
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100000;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+#submit{
+    margin-top : 50px ;
+    padding:50px 0;
+    
+}
+.profileText img:hover {
+    transform: scale(1.2);
+    transition: opacity 1s ease 1s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+  /* thả tim  */
+  
+  #rating{border:none;float:left;}
+#rating>input{display:none;}
+#rating>label:before{margin:5px;font-size:1.25em;font-family:FontAwesome;display:inline-block;content:"\f005";}/*1 ngôi sao*/
+#rating>.half:before{content:"\f089";position:absolute;}/*0.5 ngôi sao*/
+#rating>label{color:#ddd;float:right;}
+#rating>input:checked~label,
+#rating:not(:checked)>label:hover, 
+#rating:not(:checked)>label:hover~label{color:#FFD700;}
+/* Hover vào các sao phía trước ngôi sao đã chọn*/
+#rating>input:checked+label:hover,
+#rating>input:checked~label:hover,
+#rating>label:hover~input:checked~label,
+#rating>input:checked~label:hover~label{color:#FFED85;}
+  
+  
+    
